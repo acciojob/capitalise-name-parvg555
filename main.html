@@ -3,9 +3,13 @@
   <head>
   </head>
   <body>
-    Enter your name: <input type="text" id="fname">
+    Enter your name: <input type="text" id="fname" onblur="myFunction()">
 	
-	<script type="text/javascript" src="./script.js">
+	<script type="text/javascript" >
+		function myFunction() {
+		var x = document.getElementById("fname");
+		x.value = x.value.toUpperCase();
+	}
 	</script>
   </body>
 </html>
